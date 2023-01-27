@@ -9,7 +9,7 @@ Follow instructions to nuke yo school pc
 ## Info ⬇️⬇️
 
  - [✰Made by Zay<3#2123 on discord](#)
- - [✰Uses basic windows commands to fill up system memory to crash the computer ✰](https://github.com/matiassingers/awesome-readme)
+ - [✰Uses basic windows commands to fill up system memory to crash the computer ✰](#)
 
 
 ## How to install 
